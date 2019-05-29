@@ -1,0 +1,57 @@
+.pricingPlan {
+  display: flex;
+  justify-content: center;
+  background-color: #dbdbdb;
+  padding: 20px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  max-width: 450px;
+  min-height: 700px;
+  background-color: #ffffff;
+  margin-right: 15px;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 120px;
+}
+.pricingItem {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.capacity,
+.description {
+  color: #c4c4c4;
+}
+.description {
+  width: 299px;
+  padding: 0 39px;
+}
+
+.price {
+  font-size: 30px;
+  color: #c4c4c4;
+  font-weight: 600;
+}
+
+.button {
+  position: absolute;
+  bottom: 55px;
+  padding: 10px 30px;
+  right: 110px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #dd7c4b;
+  color: #ffffff;
+  border: transparent;
+}
