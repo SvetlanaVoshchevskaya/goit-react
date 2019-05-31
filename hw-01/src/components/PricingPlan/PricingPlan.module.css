@@ -29,6 +29,25 @@
   font-size: 35px;
   text-transform: uppercase;
 }
+.item:first-child {
+  color: #dd7c4b;
+}
+.item:first-child .button {
+  background-color: #dd7c4b;
+}
+.item:nth-child(2) {
+  color: #d1d1d1;
+}
+
+.item:nth-child(2) .button {
+  background-color: #d1d1d1;
+}
+.item:last-child {
+  color: #e8b65d;
+}
+.item:last-child .button {
+  background-color: #e8b65d;
+}
 .capacity,
 .description {
   color: #c4c4c4;
@@ -47,7 +66,7 @@
 .button {
   position: absolute;
   bottom: 55px;
-  padding: 10px 30px;
+  padding: 15px 35px;
   right: 110px;
   text-transform: uppercase;
   font-weight: 600;

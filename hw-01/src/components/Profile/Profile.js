@@ -1,31 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ListItem from './ListItem';
 import styles from './Profile.module.css';
 
-export const user = {
-  name: 'Jacques Gluke',
-  tag: '@jgluke',
-  location: 'Ocho Rios, Jamaica',
-  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
-const ListItem = props => {
-  const { ...stats } = props;
-  return (
-    <ul className={styles.stats}>
-      {Object.entries(stats).map(item => (
-        <li className={styles.statsItem} key={item[0]}>
-          <span className={styles.label}>{item[0]} </span>
-          <span className={styles.quantity}>{item[1]} </span>
-        </li>
-      ))}
-    </ul>
-  );
-};
 const Profile = props => {
   const { avatar, name, tag, location, stats } = props;
   return (

@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
-
-const randomColor = () => {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  return `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
-};
+import randomColor from './randomColor';
 
 const Stats = ({ title, stats }) => (
   <section className={styles.statsSection}>
